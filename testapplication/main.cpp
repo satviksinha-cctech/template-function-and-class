@@ -3,23 +3,23 @@
 using namespace std;
 
 int main() {
-    cout << "=== Generic Inventory System ===\n";
+    cout << "Generic Inventory System "<<endl;
 
-    Inventory<int> intInv;
-    intInv.addItem(101);
-    intInv.addItem(202);
-    intInv.addItem(303);
-    intInv.removeItem(202);
-    intInv.display();
+    Inventory<int> idName;
+    idName.addItem(101);
+    idName.addItem(202);
+    idName.addItem(303);
+    idName.removeItem(202);
+    idName.display();
 
     cout << endl;
 
-    Inventory<string> strInv;
-    strInv.addItem("Apples");
-    strInv.addItem("Bananas");
-    strInv.addItem("Oranges");
-    strInv.removeItem("Bananas");
-    strInv.display();
+    Inventory<string> fruits;
+    fruits.addItem("Apples");
+    fruits.addItem("Bananas");
+    fruits.addItem("Oranges");
+    fruits.removeItem("Bananas");
+    fruits.display();
 
     return 0;
 }
