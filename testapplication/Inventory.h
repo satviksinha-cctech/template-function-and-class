@@ -7,7 +7,7 @@ using namespace std;
 template <typename T>
 int findItem(const vector<T>& items, const T& target) {
     for (int i = 0; i < items.size(); ++i)
-        if (items[i] == target) return static_cast<int>(i);
+        if (items[i] == target) return i;
     return -1;
 }
 
